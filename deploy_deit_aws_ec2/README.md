@@ -21,7 +21,7 @@ which has been pre-trained and fine-tuned on ImageNet-1k (1 million images, 1,00
 For this process, you need to follow along with the video. 
 However, just make sure of these 2 things -
 1. You have a rust compiler installed on your system. If not head over to [Getting started with Rust](https://www.rust-lang.org/learn/get-started).
-2. You should have PyTorch installed on your system (or inside the virtual environment). For this you can use the command (MacOS, Windows) below. 
+2. You should have PyTorch installed inside the virtual environment. For this you can use the command (MacOS, Windows) below. 
 If you want to customise the install, checkout [Getting started with PyTorch locally](https://pytorch.org/get-started/locally/).
 
    ```bash
