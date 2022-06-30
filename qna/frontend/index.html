@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>QnA - RoBERTa</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"
+      >
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="/question.png" height="40" width="32" alt="qna" />
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a href="https://huggingface.co/deepset/roberta-base-squad2" class="nav-link px-2 link-secondary"
+              >Question answering - RoBERTa</a
+            >
+          </li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <a class="btn btn-outline-dark me-2">GitHub</a>
+          <a class="btn btn-danger">YouTube</a>
+        </div>
+      </header>
+    </div>
+    <div class="container">
+      <form id="qna-form">
+        <div class="mb-3">
+          <label for="context-input" class="form-label">Context</label>
+          <textarea
+            class="form-control"
+            id="context-input"
+            name="context"
+            rows="3"
+            placeholder="My name is John and I live in Berlin."
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="question-input" class="form-label">Question</label>
+          <input class="form-control" id="question-input" placeholder="Where do I live?" name="question" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="container py-4">
+      <div class="alert visually-hidden" id="result" role="alert">
+        <div class="text fw-bold" id="message"></div>
+      </div>
+    </div>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery uncompressed -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+  <script src="/script.js"></script>
+</html>
