@@ -1,6 +1,6 @@
 # Deploy a ML Model with Fast API and AWS EC2
 
-In this video, let's have a look at how you can deploy your ML models using Fast API on AWS EC2 instance.
+In this video, let's have a look at how you can deploy your ML models using Fast API on an AWS EC2 instance.
 Deploying your ML models or integrating them with your web application, is a quite important task.
 FastAPI with it's speed, ease of use, built-in support and documentation is an ideal candiadate for this task.
 
@@ -13,7 +13,7 @@ FastAPI with it's speed, ease of use, built-in support and documentation is an i
 Usually you might wanna deploy your own models, or the ones you have trained and tuned to a specific use case or dataset.
 For this demo, however, we are going to use a pretained model.
 
-One of the best sources for finding pretrained models is [Hugging Face](https://huggingface.co). We will choose the [roberta-base model](https://huggingface.co/roberta-base), fine-tuned using the [SQuAD2.0](https://huggingface.co/datasets/squad_v2) dataset. It's been trained on question-answer pairs, including unanswerable questions, for the task of Question Answering.
+One of the best sources for finding pretrained models is [Hugging Face](https://huggingface.co). We will choose the [roberta-base model](https://huggingface.co/roberta-base), fine-tuned using the [SQuAD2.0](https://huggingface.co/datasets/squad_v2) dataset. It's been trained on question-answer pairs, including unanswerable questions, for the task of Question-Answering.
 
 ## 🧑🏻‍💻 Building a Fast API application
 
